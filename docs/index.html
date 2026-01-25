@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Oscar Geronimo Murillo Alvarado</title>
-    
+    <title>Portafolio</title>
+    <link rel="icon" type="image/png" href="assets/images/icons/17_logo.png">
     <link rel="stylesheet" href="css/style.css">
     
     </head>
@@ -22,21 +22,41 @@
 
     <main class="container">
         <section class="hero">
-            <h1>Hola, soy Geronimo</h1>
-            <p>Desarrollador de Software | Especialista en resolver problemas complejos.</p>
-            <a href="#contacto" class="btn">Hablemos</a>
+            <h1>Hola, soy Oscar Geronimo</h1>
+            <p>Ingeniero en Informatica</p>
+            <a href="https://drive.google.com/file/d/1tesJ6g_xdamWrdlZa4gTfh7gLj42S8h3/view?usp=drive_link" class="btn-contact cv" target="_blank">Curriculum Vitae</a>
         </section>
-
-        <section id="proyectos">g
-            <h2>Mis Proyectos</h2>
+        <section id="sobre-mi" class="about-section">
+            <div class="about-container">
+                <h2>Sobre Mí</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            ¡Hola! Soy un Ingeniero en Informática apasionado por entender cómo funcionan las cosas, desde el código hasta el hardware.
+                        </p>
+                        <p>
+                            Me especializo en el <strong>Backend</strong> y la <strong>Automatización</strong>. Disfruto creando APIs rápidas con <strong>Python (FastAPI)</strong>, optimizando consultas complejas en SQL y diseñando flujos de trabajo inteligentes con herramientas como n8n.
+                        </p>
+                        <p>
+                            No solo escribo código; también me interesan los componentes!. Me gusta optimizar hardware, configurar servidores y entender la infraestructura que sostiene al software. Siempre estoy buscando la forma más eficiente de resolver un problema.
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <img src="assets/images/Yo.jpg" alt="Yo / Me"> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="proyectos">
+            <h2>Mis Proyectos en la Industria</h2>
             <div class="projects-grid">
-
                 <article class="project-card work">
                     <div class="card-img">
                         <span>vacio xd</span><!-- <span>[Imagen aquí]</span> -->
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Generacion de marbetes<span class="badge">En Desarrollo</span></h3>
+                        <h3 class="card-title">Generacion de marbetes<br><span class="badge">En Desarrollo</span></h3>
                         <p class="card-desc">
                             Optimización de base de datos y API REST. Logré reducir tiempos de consulta en un 30%, asi como generar de manera mas rapida y sencilla los marbetes para los productos.
                         </p>
@@ -44,36 +64,68 @@
                             <span class="tag">SQL</span>
                             <span class="tag">FAST API</span>
                             <span class="tag">Python</span>
-                          </div>
+                        </div>
                         <div class="links">
-                            <span>Código privado (NDA)</span>
+                            <a href="#" class="link-repo">Video Funcionamiento</a>
+                            <!-- <a href="./templates/Memly/Memly.html" class="link-repo">Funcionamiento</a> -->
                         </div>
                     </div>
                 </article>
-
-                <!-- <article class="project-card">
+                <article class="project-card end">
                     <div class="card-img">
-                         <span>[Imagen aquí]</span>
+                        <img src="assets/images/Memly/Home.png" alt="HomePage Memly">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">E-commerce de Libros</h3>
-                        <p class="card-desc">Plataforma web completa con carrito de compras.</p>
+                        <h3 class="card-title">Memly<br><span class="badge listo">Terminado</span></h3>
+                        <p class="card-desc">Aplicación web para el diagnostico y prevención de "Demencia/Alzheimer". El objetivo de esta app es detectar signos tempranos de demencia y ofrecer ejercicios cognitivos diseñados para ralentizar su progresión.</p>
                         <div class="tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
+                            <span class="tag">PostgresSQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
                         </div>
                         <div class="links">
-                            <a href="#" class="link-repo" target="_blank">🔗 Ver Código</a>
+                            <a href="https://youtu.be/7VGm3xIWmCg?si=49uUhhjBeAVoLQdP" class="link-repo" target="_blank">Video Funcionamiento</a>
                         </div>
                     </div>
-                </article> -->
-                
+                </article>
+                <article class="project-card work">
+                    <div class="card-img">
+                        <img src="assets/images/AssistantAI/n8n.png" alt="n8n Workflow">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><a>Bot de Reclutamiento - Whatsapp<br><span class="badge">En Desarrollo</span></h3>
+                        <p class="card-desc">Automatización del proceso de reclutamiento utilizando un bot desarrollado en n8n para filtrar y gestionar candidatos.</p>
+                        <div class="tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Waha API</span>
+                            <span class="tag">Whatsapp</span>
+                            <span class="tag">Docker Compose</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://youtu.be/0KfTjIsPeOM" class="link-repo"  target="_blank">Video Funcionamiento</a>
+                        <!-- <a href="./templates/AssitantAI/AssistantAI.html" class="link-repo">Funcionamiento</a> -->
+                    </div>
+                </article>
             </div>
         </section>
-
         <section id="contacto" class="contact-section">
             <h2>¿Trabajamos juntos?</h2>
-            <a href="mailto:tu@email.com" class="link-repo">oscxrma@gmail.com</a>
+            <p>Estoy disponible para nuevos proyectos y desafíos técnicos.</p>
+            
+            <div class="contact-links">
+                <a href="#" class="btn-contact email" id="btn-email" onclick="copiarCorreo(event)">
+                    Envíame un correo 
+                </a>
+                <a href="https://www.linkedin.com/in/geronimocong/" class="btn-contact linkedin" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/omurillo17" class="btn-contact github" target="_blank">
+                    GitHub
+                </a>
+            </div>
         </section>
     </main>
 
