@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Algorithm - Details</title>
+    <link rel="icon" type="image/png" href="../assets/images/icons/17_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li class="lang-toggle"><a href="algoritmo.html" title="Cambiar a Español">🌐 ES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="project-article">
+            <a href="../en.html" class="back-link">← Back to Portfolio</a>
+            <header class="article-header">
+                <h2>Prediction Algorithm for Sports Betting</h2>
+                <div class="tech-stack-bar">
+                    <span class="tag">Python</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">Optuna</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">API-FOOTBALL</span>
+                </div>
+                <div class="article-actions">
+                    <a href="#" class="btn-more" target="_blank">Watch Demo</a>
+                    <a href="https://github.com/omurillo17/Bets" class="btn-more outline" target="_blank">
+                        Code</a>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <div class="main-text">
+                    <h3>General Description</h3>
+                    <p>Development of an automated predictive ecosystem (pipeline) structured in three logical phases to
+                        identify mathematically valuable bets (Value Bets) in the football market. The system analyzes
+                        historical data, optimizes classification algorithms, and evaluates real-time odds against
+                        bookmakers.</p>
+
+                    <h3>Data Engineering and ETL</h3>
+                    <p>Automated extraction of advanced statistics and raw data through integrations with API-FOOTBALL.
+                    </p>
+                    <p>Construction of predictive variables (features) using moving averages to prevent time traps or
+                        data leakage.</p>
+                    <p>Integration of advanced metrics, including Expected Goals (xG) approximations and mathematical
+                        weighting by opponent strength.</p>
+                    <p>Design and implementation of an ETL pipeline to persistently store clean data in a PostgreSQL
+                        database.</p>
+
+                    <h3>Predictive Modeling and Validation</h3>
+                    <p>Training of a primary machine learning classification model using the XGBoost library.</p>
+                    <p>Implementation of the Optuna library to automatically test thousands of combinations and optimize
+                        hyperparameters with the main goal of maximizing ROI.</p>
+                    <p>Design of a realistic massive stress simulator using Walk-Forward Validation across 11 continuous
+                        historical seasons.</p>
+                    <p>Creation of market x-rays to audit the predictive power of the model and calculate the pure ROI
+                        (Flat ROI) on Home, Draw, and Away selections.</p>
+
+                    <h3>Quantitative Risk Management</h3>
+                    <p>Replacement of fixed stakes with dynamic position sizing using the Kelly Criterion formula.</p>
+                    <p>Application of a conservative Kelly Criterion fraction (0.05) to smooth the equity curve and
+                        shield the system against extreme volatility.</p>
+                    <p>Implementation of mathematical emergency brakes, including a maximum limit of 1.5% of the
+                        bankroll per bet and a restrictive filter for odds greater than 4.0.</p>
+                </div>
+
+                <aside class="side-info">
+                    <div class="info-card">
+                        <h4>📈 Impact and Results</h4>
+                        <p><strong>Validation:</strong> Over a sample of 1,097 real bets in Backtesting.</p>
+                        <p><strong>Profitability:</strong> Validated system with an average ROI of
+                            <strong>+5.23%</strong>.
+                        </p>
+                        <p><strong>Controlled Risk:</strong> Drastic reduction of the system's maximum Drawdown, moving
+                            from an initial catastrophic drop of -190.6% to a controlled level of
+                            <strong>-52.2%</strong>.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <!-- <div >
+                <img src="../assets/images/marbetes.png" alt="Generacion de Marbetes" class="article-image">
+            </div> -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Oscar Geronimo Murillo Alvarado.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

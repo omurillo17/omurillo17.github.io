@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Generation - Details</title>
+    <link rel="icon" type="image/png" href="../assets/images/icons/17_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li class="lang-toggle"><a href="marbetes.html" title="Cambiar a Español">🌐 ES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="project-article">
+            <a href="../en.html" class="back-link">← Back to Portfolio</a>
+            <header class="article-header">
+                <h2>Product Tag Generation (Optimized Backend)</h2>
+                <div class="tech-stack-bar">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">SQL (Relational Database)</span>
+                </div>
+                <div class="article-actions">
+                    <a href="https://youtu.be/FbwmO9vr-4Y" class="btn-more" target="_blank">Watch Demo</a>
+                    <a href="#" class="btn-more outline">Code</a>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <div class="main-text">
+
+                    <h3>General Description</h3>
+                    <p>Development of an optimized backend system for the concurrent and automated generation of product
+                        tags and labels. The system acts as a middleware between the inventory database and the document
+                        rendering engine.</p>
+
+                    <h3>Architecture and REST API</h3>
+                    <p>Design and implementation of RESTful endpoints using FastAPI for orchestrating and receiving
+                        on-demand generation requests.</p>
+                    <p>Construction of strict data validators (Pydantic) to ensure information integrity prior to
+                        document processing.</p>
+
+                    <h3>Database Optimization</h3>
+                    <p>Deep audit and refactoring of relational schemas to eliminate bottlenecks in inventory data
+                        extraction.</p>
+                    <p>Rewriting of complex SQL queries and implementation of strategic indices to accelerate access to
+                        massive records.</p>
+
+                    <h3>Scalability and Concurrency</h3>
+                    <p>Implementation of asynchronous processing to handle simultaneous requests without blocking the
+                        server's event loop.</p>
+                    <p>Structuring of paginated responses and efficient byte stream management for direct PDF file
+                        downloads.</p>
+
+                </div>
+
+                <aside class="side-info">
+                    <div class="info-card">
+
+                        <h4>📈 Impact and Results</h4>
+                        <p><strong>Optimization:</strong> Reduction of database query time by <strong>30%</strong>.</p>
+                        <p><strong>Efficiency:</strong> Complete elimination of bottlenecks in massive tag generation.
+                        </p>
+                        <p><strong>Scalability:</strong> System ready for high volume of concurrent requests.</p>
+
+                    </div>
+                </aside>
+            </div>
+            <!-- <div >
+                <img src="../assets/images/marbetes.png" alt="Generacion de Marbetes" class="article-image">
+            </div> -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Oscar Geronimo Murillo Alvarado.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

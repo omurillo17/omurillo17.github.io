@@ -30,3 +30,23 @@ function copiarCorreo(event) {
         console.error('Error al copiar: ', err);
     });
 }
+
+function copiarCorreoEn(event) {
+    event.preventDefault();
+    
+    const correo = "oscxrma@gmail.com";
+    const boton = document.getElementById("btn-email-en");
+    const textoOriginal = boton.innerHTML;
+
+    navigator.clipboard.writeText(correo).then(() => {
+        boton.innerHTML = "Copied!";
+        boton.style.backgroundColor = "#22c55e";
+
+        setTimeout(() => {
+            boton.innerHTML = textoOriginal;
+            boton.style.backgroundColor = "";
+        }, 2000);
+    }).catch(err => {
+        console.error('Copy error: ', err);
+    });
+}

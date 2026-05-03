@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generacion de Marbetes - Detalles</title>
+    <link rel="icon" type="image/png" href="../assets/images/icons/17_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li class="lang-toggle"><a href="marbetes_en.html" title="Switch to English">🌐 EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="project-article">
+            <a href="../index.html" class="back-link">← Volver al Portafolio</a>
+            <header class="article-header">
+                <h2>Generación de Marbetes (Backend Optimizado)</h2>
+                <div class="tech-stack-bar">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">SQL (Base de datos relacional)</span>
+                </div>
+                <div class="article-actions">
+                    <a href="https://youtu.be/FbwmO9vr-4Y" class="btn-more" target="_blank">Funcionamiento</a>
+                    <a href="#" class="btn-more outline">Código</a>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <div class="main-text">
+
+                    <h3>Descripción General</h3>
+                    <p>Desarrollo de un sistema backend optimizado para la generación concurrente y automatizada de
+                        etiquetas y marbetes de productos. El sistema actúa como middleware entre la base de datos de
+                        inventario y el motor de renderizado de documentos.</p>
+
+                    <h3>Arquitectura y API REST</h3>
+                    <p>Diseño e implementación de endpoints RESTful utilizando FastAPI para la orquestación y recepción
+                        de solicitudes de generación bajo demanda.</p>
+                    <p>Construcción de validadores de datos estrictos (Pydantic) para asegurar la integridad de la
+                        información antes del procesamiento de documentos.</p>
+
+                    <h3>Optimización de Base de Datos</h3>
+                    <p>Auditoría profunda y refactorización de esquemas relacionales para eliminar cuellos de botella en
+                        la extracción de datos de inventario.</p>
+                    <p>Reescritura de consultas SQL complejas e implementación de índices estratégicos para acelerar el
+                        acceso a registros masivos.</p>
+
+                    <h3>Escalabilidad y Concurrencia</h3>
+                    <p>Implementación de procesamiento asíncrono para manejar peticiones simultáneas sin bloquear el
+                        bucle de eventos del servidor.</p>
+                    <p>Estructuración de respuestas paginadas y manejo de flujos de bytes eficientes para la descarga
+                        directa de archivos PDF.</p>
+                </div>
+
+                <aside class="side-info">
+                    <div class="info-card">
+
+                        <h4>📈 Impacto y Resultados</h4>
+                        <p><strong>Optimización:</strong> Reducción del tiempo de consulta a base de datos en un
+                            <strong>30%</strong>.
+                        </p>
+                        <p><strong>Eficiencia:</strong> Eliminación completa de los cuellos de botella en la generación
+                            masiva de marbetes.</p>
+                        <p><strong>Escalabilidad:</strong> Sistema preparado para alto volumen de peticiones
+                            concurrentes.</p>
+
+                    </div>
+                </aside>
+            </div>
+            <!-- <div >
+                <img src="../assets/images/marbetes.png" alt="Generacion de Marbetes" class="article-image">
+            </div> -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Oscar Geronimo Murillo Alvarado.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

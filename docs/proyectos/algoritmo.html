@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Predicción - Detalles</title>
+    <link rel="icon" type="image/png" href="../assets/images/icons/17_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li class="lang-toggle"><a href="algoritmo_en.html" title="Switch to English">🌐 EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="project-article">
+            <a href="../index.html" class="back-link">← Volver al Portafolio</a>
+            <header class="article-header">
+                <h2>Algoritmo de Predicción para Apuestas Deportivas</h2>
+                <div class="tech-stack-bar">
+                    <span class="tag">Python</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">Optuna</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">API-FOOTBALL</span>
+                </div>
+                <div class="article-actions">
+                    <a href="#" class="btn-more" target="_blank">Funcionamiento</a>
+                    <a href="https://github.com/omurillo17/Bets" class="btn-more outline" target="_blank">Código</a>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <div class="main-text">
+                    <h3>Descripción General</h3>
+                    <p>Desarrollo de un ecosistema predictivo automatizado (pipeline) estructurado en tres fases lógicas
+                        para identificar apuestas de valor matemático (Value Bets) en el mercado de fútbol. El sistema
+                        analiza datos históricos, optimiza algoritmos de clasificación y evalúa cuotas en tiempo real
+                        contra las casas de apuestas.</p>
+
+                    <h3>Ingeniería de Datos y ETL</h3>
+                    <p>Extracción automatizada de estadísticas avanzadas y datos crudos mediante integraciones con
+                        API-FOOTBALL.</p>
+                    <p>Construcción de variables predictivas (features) mediante promedios móviles para prevenir trampas
+                        temporales o fuga de datos (data leakage).</p>
+                    <p>Integración de métricas avanzadas, incluyendo aproximaciones de Goles Esperados (xG) y
+                        ponderación matemática por la fuerza de los oponentes.</p>
+                    <p>Diseño e implementación de un pipeline ETL para almacenar los datos limpios de forma persistente
+                        en una base de datos PostgreSQL.</p>
+
+                    <h3>Modelado Predictivo y Validación</h3>
+                    <p>Entrenamiento de un modelo principal de clasificación de machine learning utilizando la librería
+                        XGBoost.</p>
+                    <p>Implementación de la librería Optuna para probar miles de combinaciones automáticamente y
+                        optimizar los hiperparámetros con el objetivo principal de maximizar el ROI.</p>
+                    <p>Diseño de un simulador de estrés masivo realista utilizando Walk-Forward Validation a través de
+                        11 temporadas históricas continuas.</p>
+                    <p>Creación de radiografías de mercado para auditar el poder de predicción del modelo y calcular el
+                        ROI puro (Flat ROI) en selecciones de Local, Empate y Visita.</p>
+
+                    <h3>Gestión de Riesgo Cuantitativo</h3>
+                    <p>Reemplazo de stakes fijos por dimensionamiento de posición dinámico utilizando la fórmula del
+                        Criterio de Kelly.</p>
+                    <p>Aplicación de una fracción conservadora del Criterio de Kelly (0.05) para suavizar la curva de
+                        capital y blindar el sistema contra la volatilidad extrema.</p>
+                    <p>Implementación de frenos de emergencia matemáticos, incluyendo un límite máximo del 1.5% del
+                        bankroll por apuesta y un filtro restrictivo para cuotas mayores a 4.0.</p>
+                </div>
+
+                <aside class="side-info">
+                    <div class="info-card">
+                        <h4>📈 Impacto y Resultados</h4>
+                        <p><strong>Validación:</strong> Sobre una muestra de 1,097 apuestas reales en Backtesting.</p>
+                        <p><strong>Rentabilidad:</strong> Sistema validado con un ROI promedio del
+                            <strong>+5.23%</strong>.
+                        </p>
+                        <p><strong>Riesgo Controlado:</strong> Reducción drástica del Drawdown máximo del sistema,
+                            pasando de una caída inicial catastrófica del -190.6% a un nivel controlado del
+                            <strong>-52.2%</strong>.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <!-- <div >
+                <img src="../assets/images/marbetes.png" alt="Generacion de Marbetes" class="article-image">
+            </div> -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Oscar Geronimo Murillo Alvarado.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
